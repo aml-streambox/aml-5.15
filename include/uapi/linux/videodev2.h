@@ -611,6 +611,14 @@ struct v4l2_pix_format {
 #define V4L2_PIX_FMT_NV12MT  v4l2_fourcc('T', 'M', '1', '2') /* 12  Y/CbCr 4:2:0 64x32 macroblocks */
 #define V4L2_PIX_FMT_NV12MT_16X16 v4l2_fourcc('V', 'M', '1', '2') /* 12  Y/CbCr 4:2:0 16x16 macroblocks */
 
+/* 10-bit YUV 4:2:0 (P010) - used for HDR video */
+#define V4L2_PIX_FMT_P010    v4l2_fourcc('P', '0', '1', '0') /* 24  Y/CbCr 4:2:0 10-bit */
+
+/* Amlogic VDIN 40-bit packed YUV422 10-bit format */
+/* 5 bytes per 2 pixels (2.5 bytes/pixel) - YYUV packed sequence */
+#define V4L2_PIX_FMT_AMLOGIC_YUV422_10BIT_PACKED \
+	v4l2_fourcc('A', 'M', 'L', 'Y') /* 40  YUV 4:2:2 10-bit packed */
+
 /* three planes - Y Cb, Cr */
 #define V4L2_PIX_FMT_YUV410  v4l2_fourcc('Y', 'U', 'V', '9') /*  9  YUV 4:1:0     */
 #define V4L2_PIX_FMT_YVU410  v4l2_fourcc('Y', 'V', 'U', '9') /*  9  YVU 4:1:0     */
