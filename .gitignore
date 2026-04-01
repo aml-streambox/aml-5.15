@@ -165,3 +165,9 @@ sphinx_*/
 
 # common_drivers
 common_drivers/
+
+# Yocto externalsrc build outputs
+/oe-logs/
+/oe-workdir/
+/arch/arm64/configs/final_defconfig
+/extra_modules_install.sh
